@@ -1,52 +1,94 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(120deg, #009688, #26a69a);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
+  padding: 0;
 }
 
-.container {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.dashboard-container {
+  display: flex;
+  height: 100vh;
 }
 
-.container h1 {
+.sidebar {
+  width: 240px;
+  background-color: #004d40;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar .logo img {
+  width: 160px;
   margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #00695c;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+}
+
+.dashboard-content h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-bottom: 15px;
   color: #009688;
 }
 
-form input {
+.card form input,
+.card form textarea,
+.card form button {
   width: 100%;
-  padding: 12px;
-  margin: 8px 0;
+  margin-bottom: 10px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-form button {
-  width: 100%;
-  padding: 12px;
+.card form button {
   background-color: #009688;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  color: white;
   font-weight: bold;
+  border: none;
   cursor: pointer;
 }
 
-form button:hover {
+.card form button:hover {
   background-color: #00796b;
-}
-
-p {
-  margin-top: 10px;
-  font-size: 14px;
 }
