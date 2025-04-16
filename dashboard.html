@@ -7,35 +7,35 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="dashboard-container">
-    <aside class="sidebar">
-      <div class="logo">
-        <img src="https://i.postimg.cc/Qd3khHq2/Design-sem-nome-13.png" alt="Zaptico Logo">
-      </div>
+  <header class="topbar">
+    <img src="https://i.postimg.cc/Qd3khHq2/Design-sem-nome-13.png" alt="Zaptico Logo" class="logo">
+  </header>
+
+  <div class="dashboard">
+    <nav class="sidebar">
       <ul>
+        <li><a href="#" class="active">Dashboard</a></li>
         <li><a href="#">Enviar Mensagem</a></li>
         <li><a href="#">Contatos</a></li>
         <li><a href="#">Templates</a></li>
         <li><a href="#">Histórico</a></li>
         <li><a href="#">Sair</a></li>
       </ul>
-    </aside>
+    </nav>
 
-    <main class="dashboard-content">
-      <h1>Bem-vindo ao Zaptico!</h1>
+    <main class="main-content">
+      <section class="welcome">
+        <h1>Bem-vindo ao Zaptico</h1>
+        <p>Automatize suas vendas no WhatsApp com agilidade e simplicidade.</p>
+      </section>
 
       <section class="card">
         <h3>Enviar Mensagem</h3>
         <form>
           <input type="text" placeholder="Número com DDD" required />
-          <textarea placeholder="Digite sua mensagem aqui..." rows="5" required></textarea>
+          <textarea placeholder="Digite sua mensagem..." rows="5" required></textarea>
           <button type="submit">Enviar</button>
         </form>
-      </section>
-
-      <section class="card">
-        <h3>Seus Contatos</h3>
-        <p>Em breve você poderá visualizar e gerenciar seus contatos aqui.</p>
       </section>
     </main>
   </div>
