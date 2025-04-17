@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Histórico - Zaptico</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <img src="https://i.postimg.cc/Qd3khHq2/Design-sem-nome-13.png" alt="Zaptico Logo" class="logo">
+  </header>
+
+  <div class="dashboard">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="painel.html">Dashboard</a></li>
+        <li><a href="enviar.html">Enviar Mensagem</a></li>
+        <li><a href="contatos.html">Contatos</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        <li><a href="historico.html">Histórico</a></li>
+        <li><a href="#" onclick="logout()">Sair</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <section class="history-section">
+        <h1>Histórico de Envios</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Destinatário</th>
+              <th>Mensagem</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>16/04/2025</td>
+              <td>+55 61 91234-5678</td>
+              <td>Olá, tudo bem? Gostaria de apresentar uma novidade incrível para você!</td>
+            </tr>
+            <tr>
+              <td>15/04/2025</td>
+              <td>+55 61 98765-4321</td>
+              <td>Bom dia! Estamos com uma promoção especial esta semana. Aproveite!</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
